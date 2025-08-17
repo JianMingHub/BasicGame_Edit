@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1441988769653175374}
   - component: {fileID: 7151918789619420193}
   - component: {fileID: 7069420450859337294}
-  - component: {fileID: 9159577525655802236}
+  - component: {fileID: 5035906835634919348}
   m_Layer: 6
   m_Name: Hero_01
   m_TagString: Player
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 5666764523598555940}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.81, y: -0.34, z: 0}
+  m_LocalPosition: {x: -7.01, y: -0.34, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -182,7 +182,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.035299, y: 1.943445}
   m_EdgeRadius: 0
---- !u!114 &9159577525655802236
+--- !u!114 &5035906835634919348
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -191,7 +191,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5666764523598555940}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff0428f6a08965a4c92881f21a17f902, type: 3}
+  m_Script: {fileID: 11500000, guid: 182583e78d1da434bb466fa1d32a69bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   atkRate: 1
@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 3669910695518344473}
   - component: {fileID: 4323717666057311798}
   - component: {fileID: 192491897400969366}
-  - component: {fileID: 5073237104635221647}
+  - component: {fileID: 8454711382700278732}
   m_Layer: 6
   m_Name: Weapon
   m_TagString: Untagged
@@ -291,7 +291,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.3
---- !u!114 &5073237104635221647
+--- !u!114 &8454711382700278732
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -300,6 +300,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 7931333631033833698}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3aff065f09ff6264fb6c57fe0b413504, type: 3}
+  m_Script: {fileID: 11500000, guid: 05e0c598310dc454f83477b523ed7ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

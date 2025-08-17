@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4869758653654782278}
   - component: {fileID: 1701110440738722299}
   - component: {fileID: 3628935821685065355}
-  - component: {fileID: 8167668249900582315}
+  - component: {fileID: 8097153232843717083}
   m_Layer: 6
   m_Name: Weapon
   m_TagString: Untagged
@@ -96,7 +96,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.45
---- !u!114 &8167668249900582315
+--- !u!114 &8097153232843717083
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -105,7 +105,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1195817035361760848}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3aff065f09ff6264fb6c57fe0b413504, type: 3}
+  m_Script: {fileID: 11500000, guid: 05e0c598310dc454f83477b523ed7ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &7059597616499643215
@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 1624039495147674281}
   - component: {fileID: -5558513387891421824}
   - component: {fileID: -3320358729084055735}
-  - component: {fileID: 6260865734845813718}
+  - component: {fileID: 8706392974753463689}
   m_Layer: 6
   m_Name: Hero_03
   m_TagString: Player
@@ -290,7 +290,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.301795, y: 2.406238}
   m_EdgeRadius: 0
---- !u!114 &6260865734845813718
+--- !u!114 &8706392974753463689
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -299,7 +299,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7059597616499643215}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff0428f6a08965a4c92881f21a17f902, type: 3}
+  m_Script: {fileID: 11500000, guid: 182583e78d1da434bb466fa1d32a69bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   atkRate: 1

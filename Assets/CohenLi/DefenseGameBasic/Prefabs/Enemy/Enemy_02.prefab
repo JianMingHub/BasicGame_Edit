@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 1343291122267549493}
   - component: {fileID: -7900191192471724718}
   - component: {fileID: 6083521607738838491}
-  - component: {fileID: 5048910853568025240}
+  - component: {fileID: 4732734707999191751}
   m_Layer: 7
   m_Name: Enemy_02
   m_TagString: Enemy
@@ -277,7 +277,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.7530379, y: 1.9882951}
   m_EdgeRadius: 0
---- !u!114 &5048910853568025240
+--- !u!114 &4732734707999191751
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -286,10 +286,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 9000307504887733491}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3cd4ddbbd66814648b48bc3b2a68deee, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b85f23c325ae0a48ad2f0dccba625b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.5
   atkDistance: 1.5
-  minCoinBonus: 5
-  maxCoinBonus: 8

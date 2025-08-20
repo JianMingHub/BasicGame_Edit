@@ -8,6 +8,8 @@ namespace UDEV.DefenseGameBasic
     {
         public float speed;
         public float atkDistance;
+        public int minCoinBonus;
+        public int maxCoinBonus;
         private Animator m_anim;
         private Rigidbody2D m_rb;
         private Player m_player;
@@ -57,9 +59,10 @@ namespace UDEV.DefenseGameBasic
             gameObject.layer = LayerMask.NameToLayer(Const.DEAD_ANIM); // change layer to dead layer
 
             m_gm.Score++;
-            // int coinBonus = Random.Range(minCoinBonus, maxCoinBonus);
+            int coinBonus = Random.Range(minCoinBonus, maxCoinBonus);
+            // Debug.Log($"Enemy died, coin bonus: {coinBonus}");
             
-            // Pref.coins += coinBonus;
+            Pref.coins += coinBonus;
 
             // if (m_gm.guiMng)
             //     m_gm.guiMng.UpdateGameplayCoins();

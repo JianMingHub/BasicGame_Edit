@@ -8,6 +8,8 @@ namespace UDEV.DefenseGameBasic
     {
         public float spawnTime;
         public Enemy[] enemyPrefabs;
+        public GUIManager guiMng;
+        // public ShopManager shopMng;
         private Player m_curPlayer;
         private bool m_isGameOver;
         private int m_score;
@@ -16,13 +18,14 @@ namespace UDEV.DefenseGameBasic
         // Start is called before the first frame update
         void Start()
         {
-            // if (IsComponentNull()) return;
-            StartCoroutine(SpawnEnemies());
-            Debug.Log("GameManager started");
+            if (IsComponentNull()) return;
+
+            guiMng.ShowGameGUI(false);
+            guiMng.UpdateMainCoins();
         }
         public bool IsComponentNull()
         {
-            return m_curPlayer == null;
+            return guiMng == null;
         }
         public void PlayGame()
         {
@@ -32,8 +35,8 @@ namespace UDEV.DefenseGameBasic
 
             StartCoroutine(SpawnEnemies());
 
-            // guiMng.ShowGameGUI(true);
-            // guiMng.UpdateGameplayCoins();
+            guiMng.ShowGameGUI(true);
+            guiMng.UpdateGameplayCoins();
             // auCtr.PlayBgm();
         }
         public void ActivePlayer()
@@ -53,9 +56,18 @@ namespace UDEV.DefenseGameBasic
             //     m_curPlayer = Instantiate(newPlayerPb, new Vector3(-7f, -1f, 0f), Quaternion.identity);
         }
         // Update is called once per frame
-        void Update()
+       public void GameOver()
         {
+            if (m_isGameOver) return;
 
+            m_isGameOver = true;
+
+            Pref.bestScore = m_score;
+
+            if (guiMng.gameOverDialog)
+                guiMng.gameOverDialog.Show(true);
+
+            // auCtr.PlaySound(auCtr.gameOver);
         }
         IEnumerator SpawnEnemies()
         {

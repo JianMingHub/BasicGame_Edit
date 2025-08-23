@@ -64,8 +64,8 @@ namespace UDEV.DefenseGameBasic
             
             Pref.coins += coinBonus;
 
-            // if (m_gm.guiMng)
-            //     m_gm.guiMng.UpdateGameplayCoins();
+            if (m_gm.guiMng)
+                m_gm.guiMng.UpdateGameplayCoins();
 
             // if (m_gm.auCtr)
             //     m_gm.auCtr.PlaySound(m_gm.auCtr.enemyDead);

@@ -10,6 +10,7 @@ namespace UDEV.DefenseGameBasic
         public Enemy[] enemyPrefabs;
         public GUIManager guiMng;
         public ShopManager shopMng;
+        public AudioController auCtr;
         private Player m_curPlayer;
         private bool m_isGameOver;
         private int m_score;
@@ -25,7 +26,7 @@ namespace UDEV.DefenseGameBasic
         }
         public bool IsComponentNull()
         {
-            return guiMng == null || shopMng == null;
+            return guiMng == null || shopMng == null || auCtr == null;
         }
         public void PlayGame()
         {
@@ -37,7 +38,7 @@ namespace UDEV.DefenseGameBasic
 
             guiMng.ShowGameGUI(true);
             guiMng.UpdateGameplayCoins();
-            // auCtr.PlayBgm();
+            auCtr.PlayBgm();
         }
         public void ActivePlayer()
         {
@@ -56,7 +57,7 @@ namespace UDEV.DefenseGameBasic
                 m_curPlayer = Instantiate(newPlayerPb, new Vector3(-7f, -1f, 0f), Quaternion.identity);
         }
         // Update is called once per frame
-       public void GameOver()
+        public void GameOver()
         {
             if (m_isGameOver) return;
 
@@ -67,7 +68,7 @@ namespace UDEV.DefenseGameBasic
             if (guiMng.gameOverDialog)
                 guiMng.gameOverDialog.Show(true);
 
-            // auCtr.PlaySound(auCtr.gameOver);
+            auCtr.PlaySound(auCtr.gameOver);
         }
         IEnumerator SpawnEnemies()
         {
